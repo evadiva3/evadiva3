@@ -19,7 +19,7 @@
 </div>
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=python,js,ts,rust,bash,pytorch,tensorflow,sklearn,threejs,blender,unity,godot,git,docker,vscode,github&theme=dark&perline=8"/>
+<img src="https://skillicons.dev/icons?i=py,js,ts,rust,bash,html,css,nodejs,npm,pytorch,tensorflow,sklearn,sqlite,fastapi,tauri,threejs,blender,unity,godot,git,docker,vscode,github,linux,arch&theme=dark&perline=9"/>
 </p>
 
 <p align="center">
@@ -60,7 +60,6 @@ eva@github:~$ tree
 <img src="https://streak-stats.demolab.com?user=evadiva3&theme=transparent&hide_border=true&background=1a1420&ring=FF8CC8&fire=FF6FB5&currStreakLabel=FFD9EC&sideLabels=FFD9EC&dates=C9668F&currStreakNum=ffffff&sideNums=ffffff"/>
 
 </div>
-
 
 
 <div align="center">

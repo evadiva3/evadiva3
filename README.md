@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=Welcome%20to%20Eva%27s%20GitHub&fontSize=36&fontColor=FFD9EC&color=0:1a1420,100:FF6FB5&fontAlignY=38&animation=fadeIn"/>
+<img src="assets/header-welcome.svg" width="700"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=2500&pause=900&color=FF8CC8&center=true&vCenter=true&width=700&lines=%24+boot+sequence+initiated...;mounting+%2Fdev%2Fcreativity...;importing+three.js+dreams...;summoning+pytorch...;compiling+nocturnal+thoughts...;system+ready+%E2%99%A1"/>
 
@@ -9,46 +9,13 @@
 ---
 
 <div align="center">
-
-```text
-╭──────────────────────────────────────────────────────────────╮
-│ ● ● ●                                      eva@github:~      │
-├──────────────────────────────────────────────────────────────┤
-│ [15:04:17] RUNNING loading profile...                        │
-│ [15:04:18] RUNNING importing python...                       │
-│ [15:04:18] RUNNING importing three.js...                     │
-│ [15:04:19] RUNNING loading pytorch...                        │
-│ [15:04:20] RUNNING compiling ideas...                        │
-│ [15:04:21] COMPLETED profile                                 │
-│                                                              │
-│ eva@github:~$ whoami                                         │
-╰──────────────────────────────────────────────────────────────╯
-```
-
+<img src="assets/hero-terminal.svg" width="560"/>
 </div>
-
-````console
-Name        :: Eva
-Username    :: @evadiva3
-
-Status      :: Online
-
-Focus
-├── Artificial Intelligence
-├── Machine Learning
-├── Three.js
-├── Web Applications
-├── 3D Modeling
-└── Neuroscience
-
-Currently
-└── building things because they're interesting.
-````
 
 ---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=soft&color=1a1420&height=65&text=Tech%20Stack&fontColor=FF8CC8&fontSize=26&fontAlignY=60&fontFamily=JetBrains%20Mono&animation=fadeIn"/>
+<img src="assets/tab-techstack.svg" width="340"/>
 </div>
 
 <p align="center">
@@ -62,7 +29,7 @@ Currently
 ---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=soft&color=1a1420&height=65&text=Directory&fontColor=FF8CC8&fontSize=26&fontAlignY=60&fontFamily=JetBrains%20Mono&animation=fadeIn"/>
+<img src="assets/tab-directory.svg" width="340"/>
 </div>
 
 ```bash
@@ -82,7 +49,7 @@ eva@github:~$ tree
 ---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=soft&color=1a1420&height=65&text=GitHub%20Stats&fontColor=FF8CC8&fontSize=26&fontAlignY=60&fontFamily=JetBrains%20Mono&animation=fadeIn"/>
+<img src="assets/tab-stats.svg" width="340"/>
 </div>
 
 <div align="center">
@@ -97,12 +64,16 @@ eva@github:~$ tree
 ---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=soft&color=1a1420&height=65&text=Contribution%20Graph&fontColor=FF8CC8&fontSize=26&fontAlignY=60&fontFamily=JetBrains%20Mono&animation=fadeIn"/>
+<img src="assets/tab-contribution.svg" width="380"/>
 </div>
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/evadiva3/evadiva3/output/github-contribution-grid-snake-dark.svg"/>
 </p>
+
+
+
+---
 
 <div align="center">
 

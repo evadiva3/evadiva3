@@ -1,8 +1,8 @@
 <div align="center">
 
-# `eva@github:~$`
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=Welcome%20to%20Eva%27s%20GitHub&fontSize=36&fontColor=FFD9EC&color=0:1a1420,100:FF6FB5&fontAlignY=38&animation=fadeIn"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=2500&pause=900&color=FF8CC8&center=true&vCenter=true&width=700&lines=%24+boot+profile...;loading+python...;loading+three.js...;loading+pytorch...;loading+ideas...;profile+ready+%E2%99%A1"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=2500&pause=900&color=FF8CC8&center=true&vCenter=true&width=700&lines=%24+boot+sequence+initiated...;mounting+%2Fdev%2Fcreativity...;importing+three.js+dreams...;summoning+pytorch...;compiling+nocturnal+thoughts...;system+ready+%E2%99%A1"/>
 
 </div>
 
@@ -48,46 +48,21 @@ Currently
 ---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=soft&color=000000&height=65&text=Tech%20Stack&fontColor=FF8CC8&fontSize=26&fontAlignY=60&fontFamily=JetBrains%20Mono&animation=fadeIn"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&color=1a1420&height=65&text=Tech%20Stack&fontColor=FF8CC8&fontSize=26&fontAlignY=60&fontFamily=JetBrains%20Mono&animation=fadeIn"/>
 </div>
 
-### Languages
-
 <p align="center">
-<img src="https://skillicons.dev/icons?i=python,js,ts,rust,bash&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=python,js,ts,rust,bash,pytorch,tensorflow,sklearn,threejs,blender,unity,godot,git,docker,vscode,github&theme=dark&perline=8"/>
 </p>
 
-### AI / Machine Learning
-
 <p align="center">
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow&theme=dark"/>
-&nbsp;
-<img src="https://go-skill-icons.vercel.app/api/icons?i=scikitlearn"/>
-</p>
-
-### Graphics
-
-<p align="center">
-<img src="https://skillicons.dev/icons?i=threejs,blender,unity,godot&theme=dark"/>
-</p>
-
-### Development
-
-<p align="center">
-<img src="https://skillicons.dev/icons?i=git,docker,vscode&theme=dark"/>
-</p>
-
-### AI Assistants
-
-<p align="center">
-<img src="https://skillicons.dev/icons?i=github"/>
-<img src="https://img.shields.io/badge/Claude-000000?style=for-the-badge&logo=anthropic&logoColor=ff8cc8"/>
+<img src="https://img.shields.io/badge/Claude-1a1420?style=for-the-badge&logo=anthropic&logoColor=FF8CC8"/>
 </p>
 
 ---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=soft&color=000000&height=65&text=Directory&fontColor=FF8CC8&fontSize=26&fontAlignY=60&fontFamily=JetBrains%20Mono&animation=fadeIn"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&color=1a1420&height=65&text=Directory&fontColor=FF8CC8&fontSize=26&fontAlignY=60&fontFamily=JetBrains%20Mono&animation=fadeIn"/>
 </div>
 
 ```bash
@@ -107,16 +82,60 @@ eva@github:~$ tree
 ---
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=soft&color=000000&height=65&text=GitHub%20Stats&fontColor=FF8CC8&fontSize=26&fontAlignY=60&fontFamily=JetBrains%20Mono&animation=fadeIn"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&color=1a1420&height=65&text=GitHub%20Stats&fontColor=FF8CC8&fontSize=26&fontAlignY=60&fontFamily=JetBrains%20Mono&animation=fadeIn"/>
 </div>
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=evadiva3&show_icons=true&hide_border=true&bg_color=000000&title_color=ff8cc8&icon_color=ff8cc8&text_color=ffd9ec"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=evadiva3&show_icons=true&hide_border=true&bg_color=1a1420&title_color=FF8CC8&icon_color=FF6FB5&text_color=FFD9EC"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=evadiva3&layout=compact&hide_border=true&bg_color=1a1420&title_color=FF8CC8&text_color=FFD9EC"/>
 
-<img src="https://streak-stats.demolab.com?user=evadiva3&theme=transparent&hide_border=true&background=000000&ring=ff8cc8&fire=ff6fb5&currStreakLabel=ffd9ec&sideLabels=ffd9ec&dates=ffb6d9&currStreakNum=ffffff&sideNums=ffffff"/>
+<img src="https://streak-stats.demolab.com?user=evadiva3&theme=transparent&hide_border=true&background=1a1420&ring=FF8CC8&fire=FF6FB5&currStreakLabel=FFD9EC&sideLabels=FFD9EC&dates=C9668F&currStreakNum=ffffff&sideNums=ffffff"/>
 
 </div>
+
+---
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=soft&color=1a1420&height=65&text=Contribution%20Graph&fontColor=FF8CC8&fontSize=26&fontAlignY=60&fontFamily=JetBrains%20Mono&animation=fadeIn"/>
+</div>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/evadiva3/evadiva3/output/github-contribution-grid-snake-dark.svg"/>
+</p>
+
+> Snake needs one setup step: add the workflow below as `.github/workflows/snake.yml` in the `evadiva3` repo, then let it run once (or trigger it manually from the Actions tab).
+
+```yaml
+name: generate animated snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: evadiva3
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
 
 ---
 
@@ -128,6 +147,6 @@ eva@github:~$ echo "Thanks for stopping by ♡"
 Thanks for stopping by ♡
 ```
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=90&section=footer&color=0:000000,100:ff8cc8"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=90&section=footer&color=0:1a1420,100:FF6FB5"/>
 
 </div>

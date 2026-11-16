@@ -160,6 +160,11 @@ def stats(source, target, theme):
                      f'.stat,.rank-text,.lang-name{{fill:{p["text"]}}}'
                      f'.progress-background{{fill:{p["track"]}}}'
                      '.card-bg{fill:none;stroke:none;fill-opacity:0}')
+    # Equal canvases keep titles and baselines aligned when the two cards sit
+    # beside one another in GitHub Markdown; content and real values stay intact.
+    root.set('width', '320')
+    root.set('height', '235')
+    root.set('viewBox', '0 0 320 235')
     animate_stats(root, theme)
     write(root, target)
 

@@ -1,6 +1,6 @@
 <img align="left" src="assets/angel-frame.svg" width="36%" alt="Static ASCII angel" />
 
-# hi im eva
+# hi im eva!
 
 current high school sophomore interested in **computational neurology** and **AI/ML**. I enjoy learning and making things :) 
 

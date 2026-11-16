@@ -41,13 +41,12 @@ And the game was over and the player woke up from the dream. And the player bega
       <img src="assets/marks/swift.svg" width="28" height="28" alt="Swift" title="Swift" />
       <img src="assets/marks/html5.svg" width="28" height="28" alt="HTML" title="HTML" />
       <img src="assets/marks/css.svg" width="28" height="28" alt="CSS" title="CSS" />
-      <br />
       <img src="assets/marks/gnubash.svg" width="28" height="28" alt="Bash" title="Bash" />
       </p>
       <sub>Python · Rust · TypeScript · JavaScript · R · Swift<br />HTML · CSS · Bash</sub>
     </td>
     <td rowspan="5" align="center" valign="middle">
-      <img src="assets/flower-white.svg" width="220" alt="Static ASCII flower" />
+      <img src="assets/flower-white.svg" width="300" alt="Static ASCII flower" />
     </td>
   </tr>
   <tr>

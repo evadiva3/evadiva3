@@ -1,4 +1,4 @@
-<img align="right" src="assets/angel-frame.svg" width="36%" alt="Static ASCII angel" />
+<img align="left" src="assets/angel-frame.svg" width="36%" alt="Static ASCII angel" />
 
 # eva
 
@@ -6,7 +6,6 @@ high school sophomore interested in **computational neurology** and **AI/ML**. i
 
 [research](https://github.com/evadiva3/fm-subtype-discovery) · [cereva](https://github.com/evadiva3/Cereva) · [repositories](https://github.com/evadiva3?tab=repositories)
 
-<br clear="right" />
 
 ## Selected work
 
@@ -17,6 +16,8 @@ Built an iOS-first migraine app with visual aura reconstruction, local storage, 
 ### [Neuroimaging research](https://github.com/evadiva3/fm-subtype-discovery)
 
 Studied the calibration and sensitivity of cluster tests on normalized neuroimaging representations, with graph ML and fMRI pipelines.
+
+<br clear="left" />
 
 <br />
 

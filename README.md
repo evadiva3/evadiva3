@@ -46,7 +46,7 @@ And the game was over and the player woke up from the dream. And the player bega
       <img src="assets/marks/gnubash.svg" width="28" height="28" alt="Bash" title="Bash" />
       </p>
       <sub>Python · Rust · TypeScript · JavaScript · R · Swift<br />HTML · CSS · Bash</sub>
-        </td>
+    </td>
   </tr>
 </table>
 
@@ -64,7 +64,7 @@ And the game was over and the player woke up from the dream. And the player bega
       <img src="assets/marks/ray.svg" width="28" height="28" alt="Ray Tune" title="Ray Tune" />
       </p>
       <sub>PyTorch · PyTorch Geometric · scikit-learn · NumPy<br />SciPy · pandas · Matplotlib · Nilearn · NiBabel<br />UMAP · Statsmodels · Optuna · Ray Tune</sub>
-        </td>
+    </td>
   </tr>
 </table>
 
@@ -82,8 +82,8 @@ And the game was over and the player woke up from the dream. And the player bega
       <img src="assets/marks/vite.svg" width="28" height="28" alt="Vite" title="Vite" />
       <img src="assets/marks/zod.svg" width="28" height="28" alt="Zod" title="Zod" />
       </p>
-      <sub>React · React Native · Expo · Tauri · Next.js Tailwind CSS · Vite · Zod · HealthKit · Canvas 2D</sub>
-        </td>
+      <sub>React · React Native · Expo · Tauri · Next.js · Tailwind CSS · Vite · Zod · HealthKit<br />Canvas 2D</sub>
+    </td>
   </tr>
 </table>
 
@@ -98,8 +98,8 @@ And the game was over and the player woke up from the dream. And the player bega
       <img src="assets/marks/anthropic.svg" width="28" height="28" alt="Anthropic API" title="Anthropic API" />
       <img src="assets/marks/ollama.svg" width="28" height="28" alt="Ollama" title="Ollama" />
       </p>
-      <sub>FastAPI · Pydantic · Uvicorn · SQLite / SQL Anthropic API · Ollama</sub>
-        </td>
+      <sub>FastAPI · Pydantic · Uvicorn · SQLite / SQL · Anthropic API · Ollama</sub>
+    </td>
   </tr>
 </table>
 
@@ -116,7 +116,6 @@ And the game was over and the player woke up from the dream. And the player bega
       <img src="assets/marks/nodedotjs.svg" width="28" height="28" alt="Node.js" title="Node.js" />
       <img src="assets/marks/vscode.svg" width="28" height="28" alt="VS Code" title="VS Code" />
       <img src="assets/marks/figma.svg" width="28" height="28" alt="Figma" title="Figma" />
-
       <img src="assets/marks/codex.svg" width="28" height="28" alt="Codex" title="Codex" />
       <img src="assets/marks/claude.svg" width="28" height="28" alt="Claude Code" title="Claude Code" />
       <img src="assets/marks/jupyter.svg" width="28" height="28" alt="Jupyter" title="Jupyter" />
@@ -125,8 +124,8 @@ And the game was over and the player woke up from the dream. And the player bega
       <img src="assets/marks/eslint.svg" width="28" height="28" alt="ESLint" title="ESLint" />
       <img src="assets/marks/ruff.svg" width="28" height="28" alt="Ruff" title="Ruff" />
       </p>
-      <sub>Git · GitHub · GitHub Actions · Docker · QEMU Node.js · VS Code · Figma · Codex · Claude Code Jupyter · pytest · Jest · ESLint · Ruff</sub>
-        </td>
+      <sub>Git · GitHub · GitHub Actions · Docker · QEMU · Node.js · VS Code · Figma · Codex<br />Claude Code · Jupyter · pytest · Jest · ESLint · Ruff</sub>
+    </td>
   </tr>
 </table>
 

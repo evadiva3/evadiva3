@@ -113,7 +113,6 @@
   <img src="assets/top-langs.svg" width="440" alt="Most-used languages across my public repositories" />
 </p>
 
-<sub>Public GitHub activity and repository language statistics. Language shares describe code in my repos, not time spent coding.</sub>
 
 ### 04 / feeding the commit snake
 

@@ -121,8 +121,8 @@ Studied the calibration and sensitivity of cluster tests on normalized neuroimag
 ## GITHUB ACTIVITY
 
 <p align="center">
-<a href="assets/stats-dark.svg#gh-dark-mode-only"><img src="assets/stats-dark.svg" width="380" alt="Animated GitHub statistics" /></a><a href="assets/stats-light.svg#gh-light-mode-only"><img src="assets/stats-light.svg" width="380" alt="Animated GitHub statistics" /></a>
-<a href="assets/top-langs-dark.svg#gh-dark-mode-only"><img src="assets/top-langs-dark.svg" width="380" alt="Animated most-used languages" /></a><a href="assets/top-langs-light.svg#gh-light-mode-only"><img src="assets/top-langs-light.svg" width="380" alt="Animated most-used languages" /></a>
+<a href="assets/stats-animated-dark.svg#gh-dark-mode-only"><img src="assets/stats-animated-dark.svg" width="380" alt="Animated GitHub statistics" /></a><a href="assets/stats-animated-light.svg#gh-light-mode-only"><img src="assets/stats-animated-light.svg" width="380" alt="Animated GitHub statistics" /></a>
+<a href="assets/top-langs-animated-dark.svg#gh-dark-mode-only"><img src="assets/top-langs-animated-dark.svg" width="380" alt="Animated most-used languages" /></a><a href="assets/top-langs-animated-light.svg#gh-light-mode-only"><img src="assets/top-langs-animated-light.svg" width="380" alt="Animated most-used languages" /></a>
 </p>
 
 <p align="center"><sub>Updated daily from GitHub.</sub></p>

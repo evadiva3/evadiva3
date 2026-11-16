@@ -68,7 +68,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stats-light.svg assets/stats-dark.svg assets/top-langs-light.svg assets/top-langs-dark.svg
+          git add assets/stats-light.svg assets/stats-dark.svg assets/top-langs-light.svg assets/top-langs-dark.svg assets/stats-animated-light.svg assets/stats-animated-dark.svg assets/top-langs-animated-light.svg assets/top-langs-animated-dark.svg
           if ! git diff --cached --quiet; then
             git commit -m "chore: refresh theme-aware profile stats"
             git pull --rebase origin main

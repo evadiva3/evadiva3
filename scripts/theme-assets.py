@@ -192,6 +192,11 @@ def main():
                 source = ASSETS / (f'{stem}.svg' if initial else f'{stem}-{theme}.svg')
                 target = ASSETS / f'{stem}-{theme}.svg'
                 stats(source, target, theme); changed.append(target.name)
+                # A distinct URL prevents previously cached static cards from
+                # hiding the newly animated presentation on profile pages.
+                animated = ASSETS / f'{stem}-animated-{theme}.svg'
+                animated.write_bytes(target.read_bytes())
+                changed.append(animated.name)
         if initial or args.snake:
             source = ASSETS / ('snake.svg' if initial else f'snake-{theme}.svg')
             target = ASSETS / f'snake-{theme}.svg'

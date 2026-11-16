@@ -5,8 +5,11 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
+    paths:
+      - README.md
+      - .github/workflows/stats.yml
+      - scripts/theme-assets.py
 
 concurrency:
   group: profile-assets
@@ -19,27 +22,51 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
-      - name: Generate stats card
+      - name: Generate light stats
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=evadiva3&show_icons=true&hide_border=true&include_all_commits=true&hide_rank=true&bg_color=ffffff&title_color=171717&icon_color=171717&text_color=52524b
-          path: assets/stats.svg
+          options: username=evadiva3&show_icons=true&hide_border=true&include_all_commits=true&hide_rank=true&bg_color=00000000&title_color=1f2328&icon_color=1f2328&text_color=59636e
+          path: assets/stats-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate top languages card
+      - name: Generate dark stats
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=evadiva3&show_icons=true&hide_border=true&include_all_commits=true&hide_rank=true&bg_color=00000000&title_color=e6edf3&icon_color=e6edf3&text_color=9da7b3
+          path: assets/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate light languages
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=evadiva3&layout=compact&langs_count=10&hide_border=true&bg_color=ffffff&title_color=171717&text_color=52524b
-          path: assets/top-langs.svg
+          options: username=evadiva3&layout=compact&langs_count=10&hide_border=true&hide_rank=true&include_all_commits=true&bg_color=00000000&title_color=1f2328&icon_color=1f2328&text_color=59636e
+          path: assets/top-langs-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit updated cards
+      - name: Generate dark languages
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=evadiva3&layout=compact&langs_count=10&hide_border=true&hide_rank=true&include_all_commits=true&bg_color=00000000&title_color=e6edf3&icon_color=e6edf3&text_color=9da7b3
+          path: assets/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Keep cards transparent and monochrome
+        run: python scripts/theme-assets.py --stats
+
+      - name: Commit refreshed cards
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/stats.svg assets/top-langs.svg
-          git commit -m "chore: refresh stats cards" || exit 0
-          git push
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats-light.svg assets/stats-dark.svg assets/top-langs-light.svg assets/top-langs-dark.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh theme-aware profile stats"
+            git push
+          fi

@@ -9,6 +9,7 @@ on:
     paths:
       - README.md
       - .github/workflows/snake.yml
+      - scripts/theme-assets.py
 
 concurrency:
   group: profile-assets
@@ -21,19 +22,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: evadiva3
           outputs: |
-            assets/snake.svg?color_snake=#171717&color_dots=#efefea,#c7c7bc,#93938a,#55554f,#242422
+            assets/snake-light.svg?color_snake=#1f2328&color_dots=#ebebeb,#c6c6c6,#969696,#666666,#3a3a3a
+            assets/snake-dark.svg?color_snake=#e6edf3&color_dots=#242424,#414141,#686868,#939393,#bdbdbd
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Commit refreshed snake
+      - name: Keep snake backgrounds transparent
+        run: python scripts/theme-assets.py --snake
+      - name: Commit refreshed snakes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/snake.svg
+          git add assets/snake-light.svg assets/snake-dark.svg
           if ! git diff --cached --quiet; then
-            git commit -m "chore: refresh monochrome contribution snake"
+            git commit -m "chore: refresh theme-aware contribution snake"
             git push
           fi

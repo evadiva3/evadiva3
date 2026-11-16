@@ -1,125 +1,117 @@
-<!-- GitHub PROFILE README: evadiva3/evadiva3/README.md -->
-<p align="center">
-  <img src="assets/header.svg" width="1000" alt="eva. brains, models and side quests. A black ASCII angel collage on white paper." />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/ascii-dark.svg" />
+  <img align="right" src="assets/ascii-light.svg" width="130" height="195" alt="ASCII angel" />
+</picture>
 
-<h2 align="center">hi, i'm eva!</h2>
+# eva
 
-<p align="center">
-  high school sophomore into <b>computational neurology</b> and <b>AI / ML</b>.<br />
-  i do research, build things that interest me, and code for fun.<br />
-  currently working on computational neurology research and Cereva.
-</p>
+high school sophomore interested in **computational neurology** and **AI/ML**. i also code for fun.
 
-<p align="center">
-  <a href="https://github.com/evadiva3?tab=repositories">projects</a> &nbsp; / &nbsp;
-  <a href="https://github.com/evadiva3/fm-subtype-discovery">research</a> &nbsp; / &nbsp;
-  <a href="https://github.com/evadiva3/Cereva">currently building: cereva</a>
-</p>
+[research](https://github.com/evadiva3/fm-subtype-discovery) · [cereva](https://github.com/evadiva3/Cereva) · [repositories](https://github.com/evadiva3?tab=repositories)
 
----
+<br clear="right" />
 
-### 01 / things taking up my tabs
+### selected work
 
-| project | what i'm working on |
-| :--- | :--- |
-| [Cereva](https://github.com/evadiva3/Cereva) | an iOS-first migraine app with visual aura reconstruction, local data, and model-assisted drafting |
-| [Neuroimaging & cluster-test research](https://github.com/evadiva3/fm-subtype-discovery) | graph ML, fMRI pipelines, and calibration of cluster tests on normalized representations |
+**[Cereva](https://github.com/evadiva3/Cereva)**<br />
+Built an iOS-first migraine app with visual aura reconstruction, local storage, and model-assisted drafting.
 
-### 02 / the stack behind the side quests
+**[Neuroimaging research](https://github.com/evadiva3/fm-subtype-discovery)**<br />
+Studied the calibration and sensitivity of cluster tests on normalized neuroimaging representations, with graph ML and fMRI pipelines.
+
+### stack
 
 **languages**
 
 <p>
-  <img src="assets/stack/python.svg" width="112" height="74" alt="Python" />
-  <img src="assets/stack/rust.svg" width="112" height="74" alt="Rust" />
-  <img src="assets/stack/typescript.svg" width="112" height="74" alt="TypeScript" />
-  <img src="assets/stack/javascript.svg" width="112" height="74" alt="JavaScript" />
-  <img src="assets/stack/r.svg" width="112" height="74" alt="R" />
-  <img src="assets/stack/swift.svg" width="112" height="74" alt="Swift" />
-  <img src="assets/stack/html5.svg" width="112" height="74" alt="HTML" />
-  <img src="assets/stack/css.svg" width="112" height="74" alt="CSS" />
-  <img src="assets/stack/gnubash.svg" width="112" height="74" alt="Bash" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/python-dark.svg" /><img src="assets/icons/python-light.svg" width="26" height="26" alt="Python" title="Python" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/rust-dark.svg" /><img src="assets/icons/rust-light.svg" width="26" height="26" alt="Rust" title="Rust" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/typescript-dark.svg" /><img src="assets/icons/typescript-light.svg" width="26" height="26" alt="TypeScript" title="TypeScript" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/javascript-dark.svg" /><img src="assets/icons/javascript-light.svg" width="26" height="26" alt="JavaScript" title="JavaScript" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/r-dark.svg" /><img src="assets/icons/r-light.svg" width="26" height="26" alt="R" title="R" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/swift-dark.svg" /><img src="assets/icons/swift-light.svg" width="26" height="26" alt="Swift" title="Swift" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/html5-dark.svg" /><img src="assets/icons/html5-light.svg" width="26" height="26" alt="HTML" title="HTML" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/css-dark.svg" /><img src="assets/icons/css-light.svg" width="26" height="26" alt="CSS" title="CSS" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/gnubash-dark.svg" /><img src="assets/icons/gnubash-light.svg" width="26" height="26" alt="Bash" title="Bash" /></picture>&nbsp;
 </p>
 
-**brains, data & machine learning**
+<sub>Python · Rust · TypeScript · JavaScript · R · Swift · HTML · CSS · Bash</sub>
+
+**research & machine learning**
 
 <p>
-  <img src="assets/stack/pytorch.svg" width="112" height="74" alt="PyTorch" />
-  <img src="assets/stack/pyg.svg" width="112" height="74" alt="PyTorch Geometric" />
-  <img src="assets/stack/scikitlearn.svg" width="112" height="74" alt="scikit-learn" />
-  <img src="assets/stack/numpy.svg" width="112" height="74" alt="NumPy" />
-  <img src="assets/stack/scipy.svg" width="112" height="74" alt="SciPy" />
-  <img src="assets/stack/pandas.svg" width="112" height="74" alt="pandas" />
-  <img src="assets/stack/matplotlib.svg" width="112" height="74" alt="Matplotlib" />
-  <img src="assets/stack/nilearn.svg" width="112" height="74" alt="Nilearn" />
-  <img src="assets/stack/nibabel.svg" width="112" height="74" alt="NiBabel" />
-  <img src="assets/stack/umap.svg" width="112" height="74" alt="UMAP" />
-  <img src="assets/stack/statsmodels.svg" width="112" height="74" alt="Statsmodels" />
-  <img src="assets/stack/optuna.svg" width="112" height="74" alt="Optuna" />
-  <img src="assets/stack/ray.svg" width="112" height="74" alt="Ray Tune" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/pytorch-dark.svg" /><img src="assets/icons/pytorch-light.svg" width="26" height="26" alt="PyTorch" title="PyTorch" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/scikitlearn-dark.svg" /><img src="assets/icons/scikitlearn-light.svg" width="26" height="26" alt="scikit-learn" title="scikit-learn" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/numpy-dark.svg" /><img src="assets/icons/numpy-light.svg" width="26" height="26" alt="NumPy" title="NumPy" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/scipy-dark.svg" /><img src="assets/icons/scipy-light.svg" width="26" height="26" alt="SciPy" title="SciPy" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/pandas-dark.svg" /><img src="assets/icons/pandas-light.svg" width="26" height="26" alt="pandas" title="pandas" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/optuna-dark.svg" /><img src="assets/icons/optuna-light.svg" width="26" height="26" alt="Optuna" title="Optuna" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/ray-dark.svg" /><img src="assets/icons/ray-light.svg" width="26" height="26" alt="Ray Tune" title="Ray Tune" /></picture>&nbsp;
 </p>
+
+<sub>PyTorch · PyTorch Geometric · scikit-learn · NumPy · SciPy · pandas · Matplotlib · Nilearn · NiBabel · UMAP · Statsmodels · Optuna · Ray Tune</sub>
 
 **apps & interfaces**
 
 <p>
-  <img src="assets/stack/react.svg" width="112" height="74" alt="React" />
-  <img src="assets/stack/reactnative.svg" width="112" height="74" alt="React Native" />
-  <img src="assets/stack/expo.svg" width="112" height="74" alt="Expo" />
-  <img src="assets/stack/tauri.svg" width="112" height="74" alt="Tauri" />
-  <img src="assets/stack/nextdotjs.svg" width="112" height="74" alt="Next.js" />
-  <img src="assets/stack/tailwindcss.svg" width="112" height="74" alt="Tailwind CSS" />
-  <img src="assets/stack/vite.svg" width="112" height="74" alt="Vite" />
-  <img src="assets/stack/zod.svg" width="112" height="74" alt="Zod" />
-  <img src="assets/stack/healthkit.svg" width="112" height="74" alt="HealthKit" />
-  <img src="assets/stack/canvas.svg" width="112" height="74" alt="Canvas 2D" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/react-dark.svg" /><img src="assets/icons/react-light.svg" width="26" height="26" alt="React" title="React" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/reactnative-dark.svg" /><img src="assets/icons/reactnative-light.svg" width="26" height="26" alt="React Native" title="React Native" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/expo-dark.svg" /><img src="assets/icons/expo-light.svg" width="26" height="26" alt="Expo" title="Expo" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/tauri-dark.svg" /><img src="assets/icons/tauri-light.svg" width="26" height="26" alt="Tauri" title="Tauri" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/nextdotjs-dark.svg" /><img src="assets/icons/nextdotjs-light.svg" width="26" height="26" alt="Next.js" title="Next.js" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/tailwindcss-dark.svg" /><img src="assets/icons/tailwindcss-light.svg" width="26" height="26" alt="Tailwind CSS" title="Tailwind CSS" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/vite-dark.svg" /><img src="assets/icons/vite-light.svg" width="26" height="26" alt="Vite" title="Vite" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/zod-dark.svg" /><img src="assets/icons/zod-light.svg" width="26" height="26" alt="Zod" title="Zod" /></picture>&nbsp;
 </p>
 
-**backends, storage & model APIs**
+<sub>React · React Native · Expo · Tauri · Next.js · Tailwind CSS · Vite · Zod · HealthKit · Canvas 2D</sub>
+
+**backends & model APIs**
 
 <p>
-  <img src="assets/stack/fastapi.svg" width="112" height="74" alt="FastAPI" />
-  <img src="assets/stack/pydantic.svg" width="112" height="74" alt="Pydantic" />
-  <img src="assets/stack/uvicorn.svg" width="112" height="74" alt="Uvicorn" />
-  <img src="assets/stack/sqlite.svg" width="112" height="74" alt="SQLite / SQL" />
-  <img src="assets/stack/anthropic.svg" width="112" height="74" alt="Anthropic API" />
-  <img src="assets/stack/ollama.svg" width="112" height="74" alt="Ollama" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/fastapi-dark.svg" /><img src="assets/icons/fastapi-light.svg" width="26" height="26" alt="FastAPI" title="FastAPI" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/pydantic-dark.svg" /><img src="assets/icons/pydantic-light.svg" width="26" height="26" alt="Pydantic" title="Pydantic" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/sqlite-dark.svg" /><img src="assets/icons/sqlite-light.svg" width="26" height="26" alt="SQLite / SQL" title="SQLite / SQL" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/anthropic-dark.svg" /><img src="assets/icons/anthropic-light.svg" width="26" height="26" alt="Anthropic API" title="Anthropic API" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/ollama-dark.svg" /><img src="assets/icons/ollama-light.svg" width="26" height="26" alt="Ollama" title="Ollama" /></picture>&nbsp;
 </p>
 
-**tools, experiments & shipping**
+<sub>FastAPI · Pydantic · Uvicorn · SQLite / SQL · Anthropic API · Ollama</sub>
+
+**tools & testing**
 
 <p>
-  <img src="assets/stack/git.svg" width="112" height="74" alt="Git" />
-  <img src="assets/stack/github.svg" width="112" height="74" alt="GitHub" />
-  <img src="assets/stack/githubactions.svg" width="112" height="74" alt="GitHub Actions" />
-  <img src="assets/stack/docker.svg" width="112" height="74" alt="Docker" />
-  <img src="assets/stack/qemu.svg" width="112" height="74" alt="QEMU" />
-  <img src="assets/stack/nodedotjs.svg" width="112" height="74" alt="Node.js" />
-  <img src="assets/stack/vscode.svg" width="112" height="74" alt="VS Code" />
-  <img src="assets/stack/figma.svg" width="112" height="74" alt="Figma" />
-  <img src="assets/stack/codex.svg" width="112" height="74" alt="Codex" />
-  <img src="assets/stack/claude.svg" width="112" height="74" alt="Claude Code" />
-  <img src="assets/stack/jupyter.svg" width="112" height="74" alt="Jupyter" />
-  <img src="assets/stack/pytest.svg" width="112" height="74" alt="pytest" />
-  <img src="assets/stack/jest.svg" width="112" height="74" alt="Jest" />
-  <img src="assets/stack/eslint.svg" width="112" height="74" alt="ESLint" />
-  <img src="assets/stack/ruff.svg" width="112" height="74" alt="Ruff" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/git-dark.svg" /><img src="assets/icons/git-light.svg" width="26" height="26" alt="Git" title="Git" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/github-dark.svg" /><img src="assets/icons/github-light.svg" width="26" height="26" alt="GitHub" title="GitHub" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/githubactions-dark.svg" /><img src="assets/icons/githubactions-light.svg" width="26" height="26" alt="GitHub Actions" title="GitHub Actions" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/docker-dark.svg" /><img src="assets/icons/docker-light.svg" width="26" height="26" alt="Docker" title="Docker" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/qemu-dark.svg" /><img src="assets/icons/qemu-light.svg" width="26" height="26" alt="QEMU" title="QEMU" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/nodedotjs-dark.svg" /><img src="assets/icons/nodedotjs-light.svg" width="26" height="26" alt="Node.js" title="Node.js" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/vscode-dark.svg" /><img src="assets/icons/vscode-light.svg" width="26" height="26" alt="VS Code" title="VS Code" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/figma-dark.svg" /><img src="assets/icons/figma-light.svg" width="26" height="26" alt="Figma" title="Figma" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/codex-dark.svg" /><img src="assets/icons/codex-light.svg" width="26" height="26" alt="Codex" title="Codex" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/claude-dark.svg" /><img src="assets/icons/claude-light.svg" width="26" height="26" alt="Claude Code" title="Claude Code" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/jupyter-dark.svg" /><img src="assets/icons/jupyter-light.svg" width="26" height="26" alt="Jupyter" title="Jupyter" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/pytest-dark.svg" /><img src="assets/icons/pytest-light.svg" width="26" height="26" alt="pytest" title="pytest" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/jest-dark.svg" /><img src="assets/icons/jest-light.svg" width="26" height="26" alt="Jest" title="Jest" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/eslint-dark.svg" /><img src="assets/icons/eslint-light.svg" width="26" height="26" alt="ESLint" title="ESLint" /></picture>&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/ruff-dark.svg" /><img src="assets/icons/ruff-light.svg" width="26" height="26" alt="Ruff" title="Ruff" /></picture>&nbsp;
 </p>
 
-### 03 / a little proof of work
+<sub>Git · GitHub · GitHub Actions · Docker · QEMU · Node.js · VS Code · Figma · Codex · Claude Code · Jupyter · pytest · Jest · ESLint · Ruff</sub>
 
-<p align="center">
-  <img src="assets/stats.svg" width="440" alt="GitHub commit and contribution statistics" />
-  <img src="assets/top-langs.svg" width="440" alt="Most-used languages across my public repositories" />
-</p>
+### github
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg" />
+  <img src="assets/stats-light.svg" width="410" alt="GitHub commit and contribution statistics" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/top-langs-dark.svg" />
+  <img src="assets/top-langs-light.svg" width="350" alt="Languages in my public repositories" />
+</picture>
 
-### 04 / feeding the commit snake
-
-<p align="center">
-  <img src="assets/snake.svg" width="1000" alt="A monochrome snake eating my GitHub contribution graph" />
-</p>
-
----
-
-<p align="center"><samp>brains, bugs, and one more commit. ✦</samp></p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
+  <img src="assets/snake-light.svg" width="1000" alt="Snake animation of my GitHub contributions" />
+</picture>

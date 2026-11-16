@@ -1,11 +1,8 @@
 <img align="left" src="assets/angel-frame.svg" width="36%" alt="Static ASCII angel" />
 
-# eva
+# hi im eva
 
-high school sophomore interested in **computational neurology** and **AI/ML**. i also code for fun.
-
-[research](https://github.com/evadiva3/fm-subtype-discovery) · [cereva](https://github.com/evadiva3/Cereva) · [repositories](https://github.com/evadiva3?tab=repositories)
-
+current high school sophomore interested in **computational neurology** and **AI/ML**. I enjoy learning and making things :) 
 
 ## Selected work
 
@@ -16,6 +13,14 @@ Built an iOS-first migraine app with visual aura reconstruction, local storage, 
 ### [Neuroimaging research](https://github.com/evadiva3/fm-subtype-discovery)
 
 Studied the calibration and sensitivity of cluster tests on normalized neuroimaging representations, with graph ML and fMRI pipelines.
+
+# ~~~~~~~~~~
+
+"And the universe said you are the universe tasting itself, talking to itself, reading its own code
+
+And the universe said I love you because you are love.
+
+And the game was over and the player woke up from the dream. And the player began a new dream. And the player dreamed again, dreamed better. And the player was the universe. And the player was love." -End Poem
 
 <br clear="left" />
 
@@ -112,7 +117,7 @@ Studied the calibration and sensitivity of cluster tests on normalized neuroimag
   <img src="assets/languages-white.svg" width="380" alt="Animated most-used languages" />
 </p>
 
-<p align="center"><sub>Updated daily from GitHub.</sub></p>
+<p align="center"><sub>Updated daily from GitHub</sub></p>
 
 <br />
 

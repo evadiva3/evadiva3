@@ -29,48 +29,32 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Generate light stats
+      - name: Fetch current GitHub statistics
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=evadiva3&show_icons=true&hide_border=true&include_all_commits=true&hide_rank=true&bg_color=00000000&title_color=1f2328&icon_color=1f2328&text_color=59636e
-          path: assets/stats-light.svg
+          options: username=evadiva3&show_icons=true&hide_border=true&include_all_commits=true&hide_rank=true&bg_color=00000000&title_color=ffffff&icon_color=ffffff&text_color=f5f7fa
+          path: assets/stats-source.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate dark stats
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: stats
-          options: username=evadiva3&show_icons=true&hide_border=true&include_all_commits=true&hide_rank=true&bg_color=00000000&title_color=e6edf3&icon_color=e6edf3&text_color=9da7b3
-          path: assets/stats-dark.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate light languages
+      - name: Fetch current repository languages
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=evadiva3&layout=compact&langs_count=10&hide_border=true&hide_rank=true&include_all_commits=true&bg_color=00000000&title_color=1f2328&icon_color=1f2328&text_color=59636e
-          path: assets/top-langs-light.svg
+          options: username=evadiva3&layout=compact&langs_count=10&hide_border=true&bg_color=00000000&title_color=ffffff&text_color=f5f7fa
+          path: assets/languages-source.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate dark languages
-        uses: stats-organization/github-readme-stats-action@v2
-        with:
-          card: top-langs
-          options: username=evadiva3&layout=compact&langs_count=10&hide_border=true&hide_rank=true&include_all_commits=true&bg_color=00000000&title_color=e6edf3&icon_color=e6edf3&text_color=9da7b3
-          path: assets/top-langs-dark.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Keep cards transparent, monochrome, and animated
+      - name: Keep cards bright, outlined, and animated
         run: python scripts/theme-assets.py --stats
 
-      - name: Commit refreshed cards
+      - name: Save refreshed profile cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stats-light.svg assets/stats-dark.svg assets/top-langs-light.svg assets/top-langs-dark.svg assets/stats-animated-light.svg assets/stats-animated-dark.svg assets/top-langs-animated-light.svg assets/top-langs-animated-dark.svg
+          git add assets/stats-white.svg assets/languages-white.svg
           if ! git diff --cached --quiet; then
-            git commit -m "chore: refresh theme-aware profile stats"
+            git commit -m "chore: refresh bright profile cards"
             git pull --rebase origin main
             git push
           fi

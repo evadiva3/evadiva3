@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Normalize profile SVGs; preserve live values and add restrained motion.
+"""Render bright, outlined live cards for the dark profile.
 
-No flags (or --initial): derive themes from stats.svg, top-langs.svg, snake.svg.
---stats/--snake: normalize freshly generated themed files in place. Workflows
-use these flags so an old snapshot never overwrites newly generated API data.
+--stats reads freshly generated stats-source.svg and languages-source.svg.
+--snake preserves the existing light/dark snake normalization workflow.
+No displayed value is changed by this presentation pass.
 """
 from __future__ import annotations
 import argparse
@@ -22,6 +22,11 @@ THEMES = {
     'dark': {'ink': '#e6edf3', 'text': '#9da7b3', 'track': '#24282e',
              'grays': ['#d1d1d1', '#bcbcbc', '#a6a6a6', '#929292', '#7f7f7f', '#6c6c6c', '#5e5e5e', '#535353', '#494949', '#414141'],
              'dots': ['#242424', '#414141', '#686868', '#939393', '#bdbdbd'], 'border': '#e6edf312'},
+}
+WHITE = {
+    'ink': '#ffffff', 'text': '#f5f7fa', 'track': '#323940',
+    'grays': ['#ffffff', '#e8e8e8', '#d2d2d2', '#bebebe', '#adadad',
+              '#9a9a9a', '#888888', '#777777', '#666666', '#555555'],
 }
 
 def tag(e):
@@ -61,7 +66,7 @@ def animate_stats(root, theme):
     Motion is regenerated after every API refresh. The text remains readable
     throughout each loop, and reduced-motion viewers get the static cards.
     """
-    p = THEMES[theme]
+    p = WHITE
     for parent in root.iter():
         for child in list(parent):
             if child.get('data-profile-motion') == 'true':
@@ -86,7 +91,7 @@ def animate_stats(root, theme):
       .stagger{opacity:1;animation:none}
       .stagger.profile-stat-row{animation:profileRowBreathe 7s ease-in-out infinite}
       #rect-mask rect,.lang-progress{animation:none!important}
-      @keyframes profileRowBreathe{0%,100%{opacity:.86}28%,58%{opacity:1}}
+      @keyframes profileRowBreathe{0%,100%{opacity:.96}28%,58%{opacity:1}}
       @media(prefers-reduced-motion:reduce){
         .stagger.profile-stat-row{animation:none!important;opacity:1}
         .profile-motion{display:none}
@@ -121,8 +126,13 @@ def animate_stats(root, theme):
             'keyTimes': '0;.16;.2;.36;.4;.56;.6;.76;.8;.96;1',
             'dur': '10s', 'repeatCount': 'indefinite'})
 
-def stats(source, target, theme):
-    root = ET.parse(source).getroot(); p = THEMES[theme]
+def stats(source, target, theme='white'):
+    root = ET.parse(source).getroot(); p = WHITE
+    # Remove our previous outline before recoloring or regenerating it.
+    for parent in root.iter():
+        for child in list(parent):
+            if child.get('data-profile-frame') == 'true':
+                parent.remove(child)
     language_colors = []
     for e in root.iter():
         if e.get('data-testid') == 'lang-progress':
@@ -133,9 +143,9 @@ def stats(source, target, theme):
     def color(value):
         v = value.lower()
         if v in lang_map: return lang_map[v]
-        if v in {'#171717', '#181818', '#151515', '#1f2328', '#e6edf3'}: return p['ink']
-        if v in {'#52524b', '#59636e', '#9da7b3'}: return p['text']
-        if v in {'#ddd', '#dddddd', '#ebedf0', '#24282e'}: return p['track']
+        if v in {'#171717', '#181818', '#151515', '#1f2328', '#e6edf3', '#ffffff'}: return p['ink']
+        if v in {'#52524b', '#59636e', '#9da7b3', '#f5f7fa'}: return p['text']
+        if v in {'#ddd', '#dddddd', '#ebedf0', '#24282e', '#323940'}: return p['track']
         if v in {'#0000', '#00000000', 'transparent', 'none'}: return value
         return p['text']
     def visit(e, definition=False):
@@ -166,6 +176,14 @@ def stats(source, target, theme):
     root.set('height', '235')
     root.set('viewBox', '0 0 320 235')
     animate_stats(root, theme)
+    # Deliberately inset: clear_backgrounds must not mistake this transparent
+    # frame for the provider's full-canvas background rectangle.
+    frame = ET.Element(f'{{{NS}}}rect', {
+        'x': '.5', 'y': '.5', 'width': '319', 'height': '234',
+        'rx': '10', 'fill': 'none', 'stroke': '#ffffff',
+        'stroke-width': '1', 'stroke-opacity': '.9',
+        'data-profile-frame': 'true', 'aria-hidden': 'true'})
+    root.insert(0, frame)
     write(root, target)
 
 def snake(source, target, theme):
@@ -184,24 +202,20 @@ def main():
     parser.add_argument('--stats', action='store_true')
     parser.add_argument('--snake', action='store_true')
     args = parser.parse_args()
-    initial = args.initial or not (args.stats or args.snake)
     changed = []
-    for theme in THEMES:
-        if initial or args.stats:
-            for stem in ('stats', 'top-langs'):
-                source = ASSETS / (f'{stem}.svg' if initial else f'{stem}-{theme}.svg')
-                target = ASSETS / f'{stem}-{theme}.svg'
-                stats(source, target, theme); changed.append(target.name)
-                # A distinct URL prevents previously cached static cards from
-                # hiding the newly animated presentation on profile pages.
-                animated = ASSETS / f'{stem}-animated-{theme}.svg'
-                animated.write_bytes(target.read_bytes())
-                changed.append(animated.name)
-        if initial or args.snake:
+    initial = args.initial or not (args.stats or args.snake)
+    if initial or args.stats:
+        for source_name, target_name in [
+                ('stats-source.svg', 'stats-white.svg'),
+                ('languages-source.svg', 'languages-white.svg')]:
+            stats(ASSETS / source_name, ASSETS / target_name)
+            changed.append(target_name)
+    if args.snake or args.initial:
+        for theme in THEMES:
             source = ASSETS / ('snake.svg' if initial else f'snake-{theme}.svg')
             target = ASSETS / f'snake-{theme}.svg'
             snake(source, target, theme); changed.append(target.name)
-    print('Validated transparent theme assets: ' + ', '.join(changed))
+    print('Validated transparent profile assets: ' + ', '.join(changed))
 
 if __name__ == '__main__':
     main()

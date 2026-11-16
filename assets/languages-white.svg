@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="235" viewBox="0 0 320 235" fill="none" role="img" aria-labelledby="descId">
+        <rect x=".5" y=".5" width="319" height="234" rx="10" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity=".9" data-profile-frame="true" aria-hidden="true" /><title id="titleId" />
+        <desc id="descId" />
+        <style>
+          .header {
+            font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+            fill: #ffffff;
+            animation: fadeInAnimation 0.8s ease-in-out forwards;
+          }
+          @supports(-moz-appearance: auto) {
+            /* Selector detects Firefox */
+            .header { font-size: 15.5px; }
+          }
+
+    @keyframes slideInAnimation {
+      from {
+        width: 0;
+      }
+      to {
+        width: calc(100%-100px);
+      }
+    }
+    @keyframes growWidthAnimation {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    .stat {
+      font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #f5f7fa;
+    }
+    @supports(-moz-appearance: auto) {
+      /* Selector detects Firefox */
+      .stat { font-size:12px; }
+    }
+    .bold { font-weight: 700 }
+    .lang-name {
+      font: 400 11px "Segoe UI", Ubuntu, Sans-Serif;
+      fill: #f5f7fa;
+    }
+    .stagger {
+      opacity: 0;
+      animation: fadeInAnimation 0.3s ease-in-out forwards;
+    }
+    #rect-mask rect{
+      animation: slideInAnimation 1s ease-in-out forwards;
+    }
+    .lang-progress{
+      animation: growWidthAnimation 0.6s ease-in-out forwards;
+    }
+    .progress-background { fill: #323940; }
+
+
+
+
+      /* Animations */
+      @keyframes scaleInAnimation {
+        from {
+          transform: translate(-5px, 5px) scale(0);
+        }
+        to {
+          transform: translate(-5px, 5px) scale(1);
+        }
+      }
+      @keyframes fadeInAnimation {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+
+        </style>
+
+
+        <defs>
+
+
+        </defs>
+
+
+        <rect data-testid="card-bg" class="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="none" width="299" fill="none" stroke-opacity="0" fill-opacity="0" />
+
+
+      <g data-testid="card-title" transform="translate(25, 35)">
+        <g transform="translate(0, 0)">
+      <text x="0" y="0" class="header" data-testid="header">Most Used Languages</text>
+    </g>
+      </g>
+
+
+        <g data-testid="main-card-body" transform="translate(0, 55)">
+
+    <svg data-testid="lang-items" x="25">
+
+
+      <mask id="rect-mask">
+          <rect x="0" y="0" width="250" height="8" fill="white" rx="5" />
+        </mask>
+
+        <rect mask="url(#rect-mask)" data-testid="lang-progress" x="0" y="0" width="127.33" height="8" fill="#ffffff" />
+
+        <rect mask="url(#rect-mask)" data-testid="lang-progress" x="127.33" y="0" width="72.27" height="8" fill="#e8e8e8" />
+
+        <rect mask="url(#rect-mask)" data-testid="lang-progress" x="199.6" y="0" width="15.92" height="8" fill="#d2d2d2" />
+
+        <rect mask="url(#rect-mask)" data-testid="lang-progress" x="215.51999999999998" y="0" width="14.54" height="8" fill="#bebebe" />
+
+        <rect mask="url(#rect-mask)" data-testid="lang-progress" x="230.05999999999997" y="0" width="19.05" height="8" fill="#adadad" />
+
+        <rect mask="url(#rect-mask)" data-testid="lang-progress" x="239.10999999999999" y="0" width="16.83" height="8" fill="#9a9a9a" />
+
+        <rect mask="url(#rect-mask)" data-testid="lang-progress" x="245.94" y="0" width="12.66" height="8" fill="#888888" />
+
+        <rect mask="url(#rect-mask)" data-testid="lang-progress" x="248.6" y="0" width="10.55" height="8" fill="#777777" />
+
+        <rect mask="url(#rect-mask)" data-testid="lang-progress" x="249.15" y="0" width="10.46" height="8" fill="#666666" />
+
+        <rect mask="url(#rect-mask)" data-testid="lang-progress" x="249.61" y="0" width="10.39" height="8" fill="#555555" />
+
+
+    <g transform="translate(0, 25)">
+      <g transform="translate(0, 0)"><g transform="translate(0, 0)">
+    <g class="stagger profile-stat-row" style="animation-delay:0.00s" data-profile-row="0">
+      <circle cx="5" cy="6" r="5" fill="#ffffff" />
+      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+        Python 50.93%
+      </text>
+    </g>
+  </g><g transform="translate(0, 25)">
+    <g class="stagger profile-stat-row" style="animation-delay:0.32s" data-profile-row="1">
+      <circle cx="5" cy="6" r="5" fill="#e8e8e8" />
+      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+        TypeScript 28.91%
+      </text>
+    </g>
+  </g><g transform="translate(0, 50)">
+    <g class="stagger profile-stat-row" style="animation-delay:0.64s" data-profile-row="2">
+      <circle cx="5" cy="6" r="5" fill="#d2d2d2" />
+      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+        Jupyter Notebook 6.37%
+      </text>
+    </g>
+  </g><g transform="translate(0, 75)">
+    <g class="stagger profile-stat-row" style="animation-delay:0.96s" data-profile-row="3">
+      <circle cx="5" cy="6" r="5" fill="#bebebe" />
+      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+        HTML 5.82%
+      </text>
+    </g>
+  </g><g transform="translate(0, 100)">
+    <g class="stagger profile-stat-row" style="animation-delay:1.28s" data-profile-row="4">
+      <circle cx="5" cy="6" r="5" fill="#adadad" />
+      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+        JavaScript 3.62%
+      </text>
+    </g>
+  </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
+    <g class="stagger profile-stat-row" style="animation-delay:1.60s" data-profile-row="5">
+      <circle cx="5" cy="6" r="5" fill="#9a9a9a" />
+      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+        Rust 2.73%
+      </text>
+    </g>
+  </g><g transform="translate(0, 25)">
+    <g class="stagger profile-stat-row" style="animation-delay:1.92s" data-profile-row="6">
+      <circle cx="5" cy="6" r="5" fill="#888888" />
+      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+        CSS 1.06%
+      </text>
+    </g>
+  </g><g transform="translate(0, 50)">
+    <g class="stagger profile-stat-row" style="animation-delay:2.24s" data-profile-row="7">
+      <circle cx="5" cy="6" r="5" fill="#777777" />
+      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+        Swift 0.22%
+      </text>
+    </g>
+  </g><g transform="translate(0, 75)">
+    <g class="stagger profile-stat-row" style="animation-delay:2.56s" data-profile-row="8">
+      <circle cx="5" cy="6" r="5" fill="#666666" />
+      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+        Shell 0.19%
+      </text>
+    </g>
+  </g><g transform="translate(0, 100)">
+    <g class="stagger profile-stat-row" style="animation-delay:2.88s" data-profile-row="9">
+      <circle cx="5" cy="6" r="5" fill="#555555" />
+      <text data-testid="lang-name" x="15" y="10" class="lang-name">
+        R 0.16%
+      </text>
+    </g>
+  </g></g>
+    </g>
+
+    <g data-profile-motion="true" class="profile-motion" mask="url(#rect-mask)" aria-hidden="true"><rect x="-28" y="0" width="28" height="8" fill="#ffffff" opacity=".24"><animate attributeName="x" values="-28;250;250;-28" keyTimes="0;.45;.97;1" dur="7s" repeatCount="indefinite" /></rect></g></svg>
+
+        </g>
+      <style>.header,.icon{fill:#ffffff}.stat,.rank-text,.lang-name{fill:#f5f7fa}.progress-background{fill:#323940}.card-bg{fill:none;stroke:none;fill-opacity:0}</style><style data-profile-motion="true">
+      .stagger{opacity:1;animation:none}
+      .stagger.profile-stat-row{animation:profileRowBreathe 7s ease-in-out infinite}
+      #rect-mask rect,.lang-progress{animation:none!important}
+      @keyframes profileRowBreathe{0%,100%{opacity:.96}28%,58%{opacity:1}}
+      @media(prefers-reduced-motion:reduce){
+        .stagger.profile-stat-row{animation:none!important;opacity:1}
+        .profile-motion{display:none}
+      }
+    </style></svg>

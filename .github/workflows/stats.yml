@@ -58,7 +58,7 @@ jobs:
           path: assets/top-langs-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Keep cards transparent and monochrome
+      - name: Keep cards transparent, monochrome, and animated
         run: python scripts/theme-assets.py --stats
 
       - name: Commit refreshed cards

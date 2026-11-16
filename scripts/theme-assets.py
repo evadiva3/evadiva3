@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Normalize profile SVGs with stdlib; preserve transparency and readable text.
+"""Normalize profile SVGs; preserve live values and add restrained motion.
 
 No flags (or --initial): derive themes from stats.svg, top-langs.svg, snake.svg.
 --stats/--snake: normalize freshly generated themed files in place. Workflows
@@ -55,6 +55,72 @@ def write(root, target):
         if is_background(e, checked):
             assert e.get('fill') == 'none', f'Opaque background in {target}'
 
+def animate_stats(root, theme):
+    """Animate presentation only: source counts and language shares stay intact.
+
+    Motion is regenerated after every API refresh. The text remains readable
+    throughout each loop, and reduced-motion viewers get the static cards.
+    """
+    p = THEMES[theme]
+    for parent in root.iter():
+        for child in list(parent):
+            if child.get('data-profile-motion') == 'true':
+                parent.remove(child)
+    for e in root.iter():
+        classes = e.get('class', '').split()
+        classes = [c for c in classes if c != 'profile-stat-row']
+        if e.get('class') is not None:
+            e.set('class', ' '.join(classes))
+        e.attrib.pop('data-profile-row', None)
+
+    # The provider's one-shot stagger can hide rows when a cached SVG is opened
+    # at an unexpected point. Keep all values visible and use a low-amplitude
+    # breathing effect instead of changing or counting through invented values.
+    rows = [e for e in root.iter() if tag(e) == 'g' and 'stagger' in e.get('class', '').split()]
+    for i, row in enumerate(rows):
+        row.set('class', row.get('class', '') + ' profile-stat-row')
+        row.set('data-profile-row', str(i))
+        row.set('style', f'animation-delay:{i * .32:.2f}s')
+    style = ET.SubElement(root, f'{{{NS}}}style', {'data-profile-motion': 'true'})
+    style.text = '''
+      .stagger{opacity:1;animation:none}
+      .stagger.profile-stat-row{animation:profileRowBreathe 7s ease-in-out infinite}
+      #rect-mask rect,.lang-progress{animation:none!important}
+      @keyframes profileRowBreathe{0%,100%{opacity:.86}28%,58%{opacity:1}}
+      @media(prefers-reduced-motion:reduce){
+        .stagger.profile-stat-row{animation:none!important;opacity:1}
+        .profile-motion{display:none}
+      }
+    '''
+    language_items = next((e for e in root.iter() if e.get('data-testid') == 'lang-items'), None)
+    if language_items is not None:
+        # A soft highlight crosses the actual stacked bar; its proportions and
+        # every displayed percentage remain unchanged.
+        group = ET.SubElement(language_items, f'{{{NS}}}g', {
+            'data-profile-motion': 'true', 'class': 'profile-motion',
+            'mask': 'url(#rect-mask)', 'aria-hidden': 'true'})
+        marker = ET.SubElement(group, f'{{{NS}}}rect', {
+            'x': '-28', 'y': '0', 'width': '28', 'height': '8',
+            'fill': p['ink'], 'opacity': '.24'})
+        ET.SubElement(marker, f'{{{NS}}}animate', {
+            'attributeName': 'x', 'values': '-28;250;250;-28',
+            'keyTimes': '0;.45;.97;1', 'dur': '7s',
+            'repeatCount': 'indefinite'})
+    else:
+        # A scanning margin marker makes the stats visibly animated while the
+        # actual values stay completely still and legible.
+        group = ET.SubElement(root, f'{{{NS}}}g', {
+            'data-profile-motion': 'true', 'class': 'profile-motion',
+            'aria-hidden': 'true'})
+        ET.SubElement(group, f'{{{NS}}}rect', {
+            'x': '16', 'y': '53', 'width': '2', 'height': '18',
+            'rx': '1', 'fill': p['ink'], 'opacity': '.72'})
+        ET.SubElement(group, f'{{{NS}}}animateTransform', {
+            'attributeName': 'transform', 'type': 'translate',
+            'values': '0 0;0 0;0 25;0 25;0 50;0 50;0 75;0 75;0 100;0 100;0 0',
+            'keyTimes': '0;.16;.2;.36;.4;.56;.6;.76;.8;.96;1',
+            'dur': '10s', 'repeatCount': 'indefinite'})
+
 def stats(source, target, theme):
     root = ET.parse(source).getroot(); p = THEMES[theme]
     language_colors = []
@@ -94,6 +160,7 @@ def stats(source, target, theme):
                      f'.stat,.rank-text,.lang-name{{fill:{p["text"]}}}'
                      f'.progress-background{{fill:{p["track"]}}}'
                      '.card-bg{fill:none;stroke:none;fill-opacity:0}')
+    animate_stats(root, theme)
     write(root, target)
 
 def snake(source, target, theme):

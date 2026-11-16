@@ -125,70 +125,70 @@
 
     <g transform="translate(0, 25)">
       <g transform="translate(0, 0)"><g transform="translate(0, 0)">
-    <g class="stagger" style="animation-delay: 450ms">
+    <g class="stagger profile-stat-row" style="animation-delay:0.00s" data-profile-row="0">
       <circle cx="5" cy="6" r="5" fill="#424242" />
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
         Python 50.84%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
-    <g class="stagger" style="animation-delay: 600ms">
+    <g class="stagger profile-stat-row" style="animation-delay:0.32s" data-profile-row="1">
       <circle cx="5" cy="6" r="5" fill="#5a5a5a" />
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
         TypeScript 28.96%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
-    <g class="stagger" style="animation-delay: 750ms">
+    <g class="stagger profile-stat-row" style="animation-delay:0.64s" data-profile-row="2">
       <circle cx="5" cy="6" r="5" fill="#717171" />
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
         Jupyter Notebook 6.38%
       </text>
     </g>
   </g><g transform="translate(0, 75)">
-    <g class="stagger" style="animation-delay: 900ms">
+    <g class="stagger profile-stat-row" style="animation-delay:0.96s" data-profile-row="3">
       <circle cx="5" cy="6" r="5" fill="#858585" />
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
         HTML 5.83%
       </text>
     </g>
   </g><g transform="translate(0, 100)">
-    <g class="stagger" style="animation-delay: 1050ms">
+    <g class="stagger profile-stat-row" style="animation-delay:1.28s" data-profile-row="4">
       <circle cx="5" cy="6" r="5" fill="#9a9a9a" />
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
         JavaScript 3.63%
       </text>
     </g>
   </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
-    <g class="stagger" style="animation-delay: 450ms">
+    <g class="stagger profile-stat-row" style="animation-delay:1.60s" data-profile-row="5">
       <circle cx="5" cy="6" r="5" fill="#adadad" />
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
         Rust 2.74%
       </text>
     </g>
   </g><g transform="translate(0, 25)">
-    <g class="stagger" style="animation-delay: 600ms">
+    <g class="stagger profile-stat-row" style="animation-delay:1.92s" data-profile-row="6">
       <circle cx="5" cy="6" r="5" fill="#bfbfbf" />
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
         CSS 1.06%
       </text>
     </g>
   </g><g transform="translate(0, 50)">
-    <g class="stagger" style="animation-delay: 750ms">
+    <g class="stagger profile-stat-row" style="animation-delay:2.24s" data-profile-row="7">
       <circle cx="5" cy="6" r="5" fill="#cecece" />
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
         Swift 0.22%
       </text>
     </g>
   </g><g transform="translate(0, 75)">
-    <g class="stagger" style="animation-delay: 900ms">
+    <g class="stagger profile-stat-row" style="animation-delay:2.56s" data-profile-row="8">
       <circle cx="5" cy="6" r="5" fill="#dcdcdc" />
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
         Shell 0.19%
       </text>
     </g>
   </g><g transform="translate(0, 100)">
-    <g class="stagger" style="animation-delay: 1050ms">
+    <g class="stagger profile-stat-row" style="animation-delay:2.88s" data-profile-row="9">
       <circle cx="5" cy="6" r="5" fill="#e8e8e8" />
       <text data-testid="lang-name" x="15" y="10" class="lang-name">
         R 0.16%
@@ -197,7 +197,16 @@
   </g></g>
     </g>
 
-    </svg>
+    <g data-profile-motion="true" class="profile-motion" mask="url(#rect-mask)" aria-hidden="true"><rect x="-28" y="0" width="28" height="8" fill="#1f2328" opacity=".24"><animate attributeName="x" values="-28;250;250;-28" keyTimes="0;.45;.97;1" dur="7s" repeatCount="indefinite" /></rect></g></svg>
 
         </g>
-      <style>.header,.icon{fill:#1f2328}.stat,.rank-text,.lang-name{fill:#59636e}.progress-background{fill:#ebedf0}.card-bg{fill:none;stroke:none;fill-opacity:0}</style></svg>
+      <style>.header,.icon{fill:#1f2328}.stat,.rank-text,.lang-name{fill:#59636e}.progress-background{fill:#ebedf0}.card-bg{fill:none;stroke:none;fill-opacity:0}</style><style data-profile-motion="true">
+      .stagger{opacity:1;animation:none}
+      .stagger.profile-stat-row{animation:profileRowBreathe 7s ease-in-out infinite}
+      #rect-mask rect,.lang-progress{animation:none!important}
+      @keyframes profileRowBreathe{0%,100%{opacity:.86}28%,58%{opacity:1}}
+      @media(prefers-reduced-motion:reduce){
+        .stagger.profile-stat-row{animation:none!important;opacity:1}
+        .profile-motion{display:none}
+      }
+    </style></svg>

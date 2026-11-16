@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,7 +24,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=evadiva3&show_icons=true&hide_border=true&bg_color=1a1420&title_color=FF8CC8&icon_color=FF6FB5&text_color=FFD9EC
+          options: username=evadiva3&show_icons=true&hide_border=true&include_all_commits=true&hide_rank=true&bg_color=ffffff&title_color=171717&icon_color=171717&text_color=52524b
           path: assets/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -28,7 +32,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=evadiva3&layout=compact&langs_count=8&hide_border=true&bg_color=1a1420&title_color=FF8CC8&text_color=FFD9EC
+          options: username=evadiva3&layout=compact&langs_count=10&hide_border=true&bg_color=ffffff&title_color=171717&text_color=52524b
           path: assets/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 

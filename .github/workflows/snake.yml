@@ -2,11 +2,17 @@ name: generate animated snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "7 0 * * *"
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
+    paths:
+      - README.md
+      - .github/workflows/snake.yml
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -14,14 +20,20 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - uses: Platane/snk@v3
+      - uses: actions/checkout@v4
+      - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: evadiva3
           outputs: |
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#FFD9EC&color_dots=#221a24,#6b2646,#a8305f,#FF6FB5,#FF8CC8
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
+            assets/snake.svg?color_snake=#171717&color_dots=#efefea,#c7c7bc,#93938a,#55554f,#242422
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit refreshed snake
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/snake.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh monochrome contribution snake"
+            git push
+          fi

@@ -1,7 +1,5 @@
 {
   "canvas_width": 1000,
-  "card_x": 20,
-  "card_width": 920,
   "gap": 22,
   "flower": {
     "src": "flower-white.svg",

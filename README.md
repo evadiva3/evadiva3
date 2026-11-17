@@ -28,7 +28,7 @@ And the game was over and the player woke up from the dream. And the player bega
 
 ## Tech stack
 
-<img src="assets/stack-overlay.svg" width="1000" alt="Tech stack: five matching outlined boxes with white logos and a large ASCII flower overlapping their right edges" />
+<img src="assets/stack-ornaments.svg" width="1000" alt="Tech stack: white logos with small dotted binary-and-tilde dividers between departments and an overlaid ASCII flower" />
 
 <details>
 <summary>Stack details</summary>

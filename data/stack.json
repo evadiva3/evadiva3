@@ -1,0 +1,332 @@
+{
+  "canvas_width": 1000,
+  "card_x": 20,
+  "card_width": 920,
+  "gap": 22,
+  "flower": {
+    "src": "flower-white.svg",
+    "x": 440,
+    "y": 30,
+    "width": 560
+  },
+  "groups": [
+    {
+      "title": "Languages",
+      "names": [
+        "Python",
+        "Rust",
+        "TypeScript",
+        "JavaScript",
+        "R",
+        "Swift",
+        "HTML",
+        "CSS",
+        "Bash"
+      ],
+      "marks": [
+        {
+          "id": "python",
+          "name": "Python",
+          "src": "marks/python.svg"
+        },
+        {
+          "id": "rust",
+          "name": "Rust",
+          "src": "marks/rust.svg"
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript",
+          "src": "marks/typescript.svg"
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "src": "marks/javascript.svg"
+        },
+        {
+          "id": "r",
+          "name": "R",
+          "src": "marks/r.svg"
+        },
+        {
+          "id": "swift",
+          "name": "Swift",
+          "src": "marks/swift.svg"
+        },
+        {
+          "id": "html5",
+          "name": "HTML",
+          "src": "marks/html5.svg"
+        },
+        {
+          "id": "css",
+          "name": "CSS",
+          "src": "marks/css.svg"
+        },
+        {
+          "id": "gnubash",
+          "name": "Bash",
+          "src": "marks/gnubash.svg"
+        }
+      ],
+      "columns": 5,
+      "narrow": true
+    },
+    {
+      "title": "Research & machine learning",
+      "names": [
+        "PyTorch",
+        "PyTorch Geometric",
+        "scikit-learn",
+        "NumPy",
+        "SciPy",
+        "pandas",
+        "Matplotlib",
+        "Nilearn",
+        "NiBabel",
+        "UMAP",
+        "Statsmodels",
+        "Optuna",
+        "Ray Tune"
+      ],
+      "marks": [
+        {
+          "id": "pytorch",
+          "name": "PyTorch",
+          "src": "marks/pytorch.svg"
+        },
+        {
+          "id": "scikitlearn",
+          "name": "scikit-learn",
+          "src": "marks/scikitlearn.svg"
+        },
+        {
+          "id": "numpy",
+          "name": "NumPy",
+          "src": "marks/numpy.svg"
+        },
+        {
+          "id": "scipy",
+          "name": "SciPy",
+          "src": "marks/scipy.svg"
+        },
+        {
+          "id": "pandas",
+          "name": "pandas",
+          "src": "marks/pandas.svg"
+        },
+        {
+          "id": "optuna",
+          "name": "Optuna",
+          "src": "marks/optuna.svg"
+        },
+        {
+          "id": "ray",
+          "name": "Ray Tune",
+          "src": "marks/ray.svg"
+        }
+      ],
+      "columns": 5,
+      "narrow": true
+    },
+    {
+      "title": "Apps & interfaces",
+      "names": [
+        "React",
+        "React Native",
+        "Expo",
+        "Tauri",
+        "Next.js",
+        "Tailwind CSS",
+        "Vite",
+        "Zod",
+        "HealthKit",
+        "Canvas 2D"
+      ],
+      "marks": [
+        {
+          "id": "react",
+          "name": "React",
+          "src": "marks/react.svg"
+        },
+        {
+          "id": "reactnative",
+          "name": "React Native",
+          "src": "marks/reactnative.svg"
+        },
+        {
+          "id": "expo",
+          "name": "Expo",
+          "src": "marks/expo.svg"
+        },
+        {
+          "id": "tauri",
+          "name": "Tauri",
+          "src": "marks/tauri.svg"
+        },
+        {
+          "id": "nextdotjs",
+          "name": "Next.js",
+          "src": "marks/nextdotjs.svg"
+        },
+        {
+          "id": "tailwindcss",
+          "name": "Tailwind CSS",
+          "src": "marks/tailwindcss.svg"
+        },
+        {
+          "id": "vite",
+          "name": "Vite",
+          "src": "marks/vite.svg"
+        },
+        {
+          "id": "zod",
+          "name": "Zod",
+          "src": "marks/zod.svg"
+        }
+      ],
+      "columns": 5,
+      "narrow": true
+    },
+    {
+      "title": "Backends & model APIs",
+      "names": [
+        "FastAPI",
+        "Pydantic",
+        "Uvicorn",
+        "SQLite / SQL",
+        "Anthropic API",
+        "Ollama"
+      ],
+      "marks": [
+        {
+          "id": "fastapi",
+          "name": "FastAPI",
+          "src": "marks/fastapi.svg"
+        },
+        {
+          "id": "pydantic",
+          "name": "Pydantic",
+          "src": "marks/pydantic.svg"
+        },
+        {
+          "id": "sqlite",
+          "name": "SQLite / SQL",
+          "src": "marks/sqlite.svg"
+        },
+        {
+          "id": "anthropic",
+          "name": "Anthropic API",
+          "src": "marks/anthropic.svg"
+        },
+        {
+          "id": "ollama",
+          "name": "Ollama",
+          "src": "marks/ollama.svg"
+        }
+      ],
+      "columns": 5,
+      "narrow": false
+    },
+    {
+      "title": "Tools & testing",
+      "names": [
+        "Git",
+        "GitHub",
+        "GitHub Actions",
+        "Docker",
+        "QEMU",
+        "Node.js",
+        "VS Code",
+        "Figma",
+        "Codex",
+        "Claude Code",
+        "Jupyter",
+        "pytest",
+        "Jest",
+        "ESLint",
+        "Ruff"
+      ],
+      "marks": [
+        {
+          "id": "git",
+          "name": "Git",
+          "src": "marks/git.svg"
+        },
+        {
+          "id": "github",
+          "name": "GitHub",
+          "src": "marks/github.svg"
+        },
+        {
+          "id": "githubactions",
+          "name": "GitHub Actions",
+          "src": "marks/githubactions.svg"
+        },
+        {
+          "id": "docker",
+          "name": "Docker",
+          "src": "marks/docker.svg"
+        },
+        {
+          "id": "qemu",
+          "name": "QEMU",
+          "src": "marks/qemu.svg"
+        },
+        {
+          "id": "nodedotjs",
+          "name": "Node.js",
+          "src": "marks/nodedotjs.svg"
+        },
+        {
+          "id": "vscode",
+          "name": "VS Code",
+          "src": "marks/vscode.svg"
+        },
+        {
+          "id": "figma",
+          "name": "Figma",
+          "src": "marks/figma.svg"
+        },
+        {
+          "id": "codex",
+          "name": "Codex",
+          "src": "marks/codex.svg"
+        },
+        {
+          "id": "claude",
+          "name": "Claude Code",
+          "src": "marks/claude.svg"
+        },
+        {
+          "id": "jupyter",
+          "name": "Jupyter",
+          "src": "marks/jupyter.svg"
+        },
+        {
+          "id": "pytest",
+          "name": "pytest",
+          "src": "marks/pytest.svg"
+        },
+        {
+          "id": "jest",
+          "name": "Jest",
+          "src": "marks/jest.svg"
+        },
+        {
+          "id": "eslint",
+          "name": "ESLint",
+          "src": "marks/eslint.svg"
+        },
+        {
+          "id": "ruff",
+          "name": "Ruff",
+          "src": "marks/ruff.svg"
+        }
+      ],
+      "columns": 8,
+      "narrow": false
+    }
+  ]
+}

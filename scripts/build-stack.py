@@ -60,10 +60,13 @@ def inline_svg(path, prefix, x, y, width, height):
     return node
 
 def ornament(y, index):
-    """A small four-wave ornament, drawn as artwork rather than text."""
+    """A long wave ornament with sparkles at both ends."""
     group=element('g',{'transform':f'translate(53 {y:g})',
         'data-stack-divider':str(index+1),'aria-hidden':'true'})
-    group.append(element('path',{'d':'M0 0 c5 -4 9 -4 14 0 s9 4 14 0 s9 -4 14 0 s9 4 14 0',
+    for x in (4,244):
+        group.append(element('path',{'d':f'M{x} -5 L{x+1.4} -1.4 L{x+5} 0 L{x+1.4} 1.4 L{x} 5 L{x-1.4} 1.4 L{x-5} 0 L{x-1.4} -1.4 Z',
+            'fill':'none','stroke':'#ffffff','stroke-width':'1','opacity':'.7'}))
+    group.append(element('path',{'d':'M16 0 c5 -4 9 -4 14 0 '+ 's9 4 14 0 s9 -4 14 0 '*7,
         'fill':'none','stroke':'#ffffff','stroke-width':'1.35',
         'stroke-linecap':'round','opacity':'.62'}))
     return group

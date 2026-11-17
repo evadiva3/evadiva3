@@ -61,7 +61,7 @@ def inline_svg(path, prefix, x, y, width, height):
 
 def ornament(y, index):
     """A tiny dotted binary ribbon, drawn as artwork rather than text."""
-    group=element('g',{'transform':f'translate(6 {y:g})',
+    group=element('g',{'transform':f'translate(53 {y:g})',
         'data-stack-divider':str(index+1),'aria-hidden':'true'})
     for x in (4,244):
         group.append(element('path',{'d':f'M{x} -5 L{x+1.4} -1.4 L{x+5} 0 L{x+1.4} 1.4 L{x} 5 L{x-1.4} 1.4 L{x-5} 0 L{x-1.4} -1.4 Z',

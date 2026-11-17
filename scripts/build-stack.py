@@ -60,25 +60,12 @@ def inline_svg(path, prefix, x, y, width, height):
     return node
 
 def ornament(y, index):
-    """A tiny dotted binary ribbon, drawn as artwork rather than text."""
+    """A small four-wave ornament, drawn as artwork rather than text."""
     group=element('g',{'transform':f'translate(53 {y:g})',
         'data-stack-divider':str(index+1),'aria-hidden':'true'})
-    for x in (4,244):
-        group.append(element('path',{'d':f'M{x} -5 L{x+1.4} -1.4 L{x+5} 0 L{x+1.4} 1.4 L{x} 5 L{x-1.4} 1.4 L{x-5} 0 L{x-1.4} -1.4 Z',
-            'fill':'none','stroke':'#ffffff','stroke-width':'1','opacity':'.7'}))
-    for start in (16,172):
-        group.append(element('path',{'d':f'M{start} 0 c5 -4 9 -4 14 0 s9 4 14 0 s9 -4 14 0 s9 4 14 0',
-            'fill':'none','stroke':'#ffffff','stroke-width':'1.35',
-            'stroke-linecap':'round','opacity':'.62'}))
-    glyphs={'0':['111','101','101','101','111'],
-            '1':['010','110','010','010','111']}
-    bits=['010110','101001','001101','110010'][index%4]
-    for i,bit in enumerate(bits):
-        for row,pattern in enumerate(glyphs[bit]):
-            for col,on in enumerate(pattern):
-                if on=='1':
-                    group.append(element('circle',{'cx':90+i*13+col*3,
-                        'cy':-6+row*3,'r':'.85','fill':'#ffffff','opacity':'.8'}))
+    group.append(element('path',{'d':'M0 0 c5 -4 9 -4 14 0 s9 4 14 0 s9 -4 14 0 s9 4 14 0',
+        'fill':'none','stroke':'#ffffff','stroke-width':'1.35',
+        'stroke-linecap':'round','opacity':'.62'}))
     return group
 
 def main():

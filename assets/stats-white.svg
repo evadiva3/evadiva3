@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="235" viewBox="0 0 320 235" fill="none" role="img" aria-labelledby="descId">
         <rect x=".5" y=".5" width="319" height="234" rx="10" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity=".9" data-profile-frame="true" aria-hidden="true" /><title id="titleId">Eva B's GitHub Stats, Rank: B-</title>
-        <desc id="descId">Total Stars Earned: 3, Total Commits  : 360, Total PRs: 114, Total Issues: 2, Contributed to (last year): 16</desc>
+        <desc id="descId">Total Stars Earned: 3, Total Commits  : 361, Total PRs: 130, Total Issues: 8, Contributed to (last year): 16</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -64,7 +64,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 181.47715208747556;
+        stroke-dashoffset: 175.84437400092025;
       }
     }
 
@@ -132,7 +132,7 @@
     </svg>
 
       <text class="stat bold" x="25" y="12.5">Total Commits:</text>
-      <text class="stat bold" x="224.01" y="12.5" data-testid="commits">360</text>
+      <text class="stat bold" x="224.01" y="12.5" data-testid="commits">361</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger profile-stat-row" style="animation-delay:0.64s" transform="translate(25, 0)" data-profile-row="2">
@@ -142,7 +142,7 @@
     </svg>
 
       <text class="stat bold" x="25" y="12.5">Total PRs:</text>
-      <text class="stat bold" x="224.01" y="12.5" data-testid="prs">114</text>
+      <text class="stat bold" x="224.01" y="12.5" data-testid="prs">130</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger profile-stat-row" style="animation-delay:0.96s" transform="translate(25, 0)" data-profile-row="3">
@@ -152,7 +152,7 @@
     </svg>
 
       <text class="stat bold" x="25" y="12.5">Total Issues:</text>
-      <text class="stat bold" x="224.01" y="12.5" data-testid="issues">2</text>
+      <text class="stat bold" x="224.01" y="12.5" data-testid="issues">8</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger profile-stat-row" style="animation-delay:1.28s" transform="translate(25, 0)" data-profile-row="4">

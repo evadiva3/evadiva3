@@ -77,46 +77,44 @@ Git · GitHub · GitHub Actions · Docker · QEMU · Node.js · VS Code · Figma
 
 Open-source work, including merged contributions and submitted pull requests.
 
-<sub>Personal use: ✓ = I use it in my own work; — = contribution work.</sub>
-
 ### Neuroimaging & brain signals
 
-- **[MNE-Python](https://github.com/mne-tools/mne-python)** · <sub>Personal use: ✓</sub><br />
-  EEG/MEG analysis; submitted fixes for regression statistics, peak finding, and annotations. [My PRs](https://github.com/mne-tools/mne-python/pulls?q=is%3Apr+author%3Aevadiva3)
-- **[MNE-NIRS](https://github.com/mne-tools/mne-nirs)** · <sub>Personal use: ✓</sub><br />
-  fNIRS processing; submitted fixes for GLM statistics, wavelength matching, and recording export. [My PRs](https://github.com/mne-tools/mne-nirs/pulls?q=is%3Apr+author%3Aevadiva3)
-- **[MNE-Connectivity](https://github.com/mne-tools/mne-connectivity)** · <sub>Personal use: ✓</sub><br />
-  Brain connectivity analysis; merged a cleanup and proposed fixes for degree calculations and logging. [My PRs](https://github.com/mne-tools/mne-connectivity/pulls?q=is%3Apr+author%3Aevadiva3)
-- **[MNE-BIDS](https://github.com/mne-tools/mne-bids)** · <sub>Personal use: ✓</sub><br />
-  BIDS-compatible neuroscience datasets; submitted clearer directory error messages. [My PRs](https://github.com/mne-tools/mne-bids/pulls?q=is%3Apr+author%3Aevadiva3)
-- **[Nilearn](https://github.com/nilearn/nilearn)** · <sub>Personal use: ✓</sub><br />
-  Neuroimaging and machine learning; merged a contrast-scaling fix and submitted clearer error messages. [My PRs](https://github.com/nilearn/nilearn/pulls?q=is%3Apr+author%3Aevadiva3)
-- **[DIPY](https://github.com/dipy/dipy)** · <sub>Personal use: —</sub><br />
-  Diffusion and medical imaging; merged a registration convergence-message fix. [My PRs](https://github.com/dipy/dipy/pulls?q=is%3Apr+author%3Aevadiva3)
+- **[MNE-Python](https://github.com/mne-tools/mne-python)**<br />
+  EEG/MEG analysis; submitted fixes for regression statistics, peak finding, and annotations.
+- **[MNE-NIRS](https://github.com/mne-tools/mne-nirs)**<br />
+  fNIRS processing; submitted fixes for GLM statistics, wavelength matching, and recording export.
+- **[MNE-Connectivity](https://github.com/mne-tools/mne-connectivity)**<br />
+  Brain connectivity analysis; merged a cleanup and proposed fixes for degree calculations and logging.
+- **[MNE-BIDS](https://github.com/mne-tools/mne-bids)**<br />
+  BIDS-compatible neuroscience datasets; submitted clearer directory error messages.
+- **[Nilearn](https://github.com/nilearn/nilearn)**<br />
+  Neuroimaging and machine learning; merged a contrast-scaling fix and submitted clearer error messages.
+- **[DIPY](https://github.com/dipy/dipy)**<br />
+  Diffusion and medical imaging; merged a registration convergence-message fix.
 
 ### Electrophysiology & recording tools
 
-- **[Neo](https://github.com/NeuralEnsemble/python-neo)** · <sub>Personal use: —</sub><br />
-  Neurophysiology data and file readers; submitted fixes for Plexon signal blocks and error messages. [My PRs](https://github.com/NeuralEnsemble/python-neo/pulls?q=is%3Apr+author%3Aevadiva3)
-- **[Elephant](https://github.com/NeuralEnsemble/elephant)** · <sub>Personal use: —</sub><br />
-  Electrophysiology analysis; submitted a fix for invalid iCSD filter settings. [My PRs](https://github.com/NeuralEnsemble/elephant/pulls?q=is%3Apr+author%3Aevadiva3)
-- **[ProbeInterface](https://github.com/SpikeInterface/probeinterface)** · <sub>Personal use: —</sub><br />
-  Electrode probe geometry and wiring; submitted clearer contact-slicing errors. [My PRs](https://github.com/SpikeInterface/probeinterface/pulls?q=is%3Apr+author%3Aevadiva3)
+- **[Neo](https://github.com/NeuralEnsemble/python-neo)**<br />
+  Neurophysiology data and file readers; submitted fixes for Plexon signal blocks and error messages.
+- **[Elephant](https://github.com/NeuralEnsemble/elephant)**<br />
+  Electrophysiology analysis; submitted a fix for invalid iCSD filter settings.
+- **[ProbeInterface](https://github.com/SpikeInterface/probeinterface)**<br />
+  Electrode probe geometry and wiring; submitted clearer contact-slicing errors.
 
 ### Signal processing & time series
 
-- **[NeuroKit2](https://github.com/neuropsychology/NeuroKit)** · <sub>Personal use: —</sub><br />
-  Physiological signal processing; submitted fixes for HRV, smoothing, and regression-fit metrics. [My PRs](https://github.com/neuropsychology/NeuroKit/pulls?q=is%3Apr+author%3Aevadiva3)
-- **[NiTime](https://github.com/nipy/nitime)** · <sub>Personal use: —</sub><br />
-  Neuroscience time series; merged a fix preserving duration when changing a time axis’s sampling interval. [My PRs](https://github.com/nipy/nitime/pulls?q=is%3Apr+author%3Aevadiva3)
-- **[FOOOF / specparam](https://github.com/fooof-tools/fooof)** · <sub>Personal use: —</sub><br />
-  Neural power-spectrum analysis; submitted fixes for undefined plotting arguments. [My PRs](https://github.com/fooof-tools/fooof/pulls?q=is%3Apr+author%3Aevadiva3)
-- **[AntroPy](https://github.com/raphaelvallat/antropy)** · <sub>Personal use: —</sub><br />
-  Signal entropy and complexity; submitted support for NumPy scalar inputs. [My PRs](https://github.com/raphaelvallat/antropy/pulls?q=is%3Apr+author%3Aevadiva3)
+- **[NeuroKit2](https://github.com/neuropsychology/NeuroKit)**<br />
+  Physiological signal processing; submitted fixes for HRV, smoothing, and regression-fit metrics.
+- **[NiTime](https://github.com/nipy/nitime)**<br />
+  Neuroscience time series; merged a fix preserving duration when changing a time axis’s sampling interval.
+- **[FOOOF / specparam](https://github.com/fooof-tools/fooof)**<br />
+  Neural power-spectrum analysis; submitted fixes for undefined plotting arguments.
+- **[AntroPy](https://github.com/raphaelvallat/antropy)**<br />
+  Signal entropy and complexity; submitted support for NumPy scalar inputs.
 
 ### Machine learning & statistics
 
-- **[snnTorch](https://github.com/jeshraghian/snntorch)** · <sub>Personal use: —</sub><br />
-  Spiking neural networks; submitted fixes for neuron state, spike encoding, monitoring, and memory retention. [My PRs](https://github.com/jeshraghian/snntorch/pulls?q=is%3Apr+author%3Aevadiva3)
-- **[Pingouin](https://github.com/raphaelvallat/pingouin)** · <sub>Personal use: —</sub><br />
-  Statistical analysis in Python; submitted a clearer missing-dependency error. [My PRs](https://github.com/raphaelvallat/pingouin/pulls?q=is%3Apr+author%3Aevadiva3)
+- **[snnTorch](https://github.com/jeshraghian/snntorch)**<br />
+  Spiking neural networks; submitted fixes for neuron state, spike encoding, monitoring, and memory retention.
+- **[Pingouin](https://github.com/raphaelvallat/pingouin)**<br />
+  Statistical analysis in Python; submitted a clearer missing-dependency error.
